@@ -29,6 +29,11 @@ Poderemos utilizar essa aplicação fazendo uma chamada via docker. Ex:
 docker run <sua imagem docker> —url=http://google.com —requests=1000 —concurrency=10
 
 ## Utilizando a aplicação:
-- Gerar a imagem da aplicação através do comando: `docker build -t stress-test .`
-- Pode ser acionada através do docker pelo seguinte comando: `docker run stress-test --url=https://httpbin.org/get --requests=1000 --concurrency=10`
-- Ou pode ser usado diretamente da raiz do projeto pelo comando: `go run main.go --url=http://google.com --requests=100 --concurrency=10`
+- Gerar a imagem da aplicação através do comando:
+  -  `docker build -t stress-test .`
+
+- Pode ser acionada através do docker pelo seguinte comando:
+  - `docker run stress-test --url=https://httpbin.org/get --requests=1000 --concurrency=10`
+  
+- Ou pode ser usado diretamente da raiz do projeto pelo comando:
+  -  `go run main.go --url=http://google.com --requests=100 --concurrency=10`
